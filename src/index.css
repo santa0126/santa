@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/* Noto Sans KR faces (Figma-resolved variable font) */
+@font-face {
+  font-family: 'Noto Sans KR:Regular';
+  src: url('https://static.figma.com/font/NotoSansKR-VF_2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Noto Sans KR:Medium';
+  src: url('https://static.figma.com/font/NotoSansKR-VF_2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Noto Sans KR:Bold';
+  src: url('https://static.figma.com/font/NotoSansKR-VF_2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Design.md tokens. Edit values here to restyle the whole app. */
+@theme {
+  /* semantic colors */
+  --color-text-primary: #181a1b;
+  --color-text-secondary: #66707a;
+  --color-text-tertiary: #878787;
+  --color-text-on-dark: #ffffff;
+  --color-text-accent: #ff2e98;
+  --color-text-error: #e30036;
+  --color-text-placeholder: #b7bdc4;
+  --color-text-on-disabled: #66707a;
+  --color-bg-surface: #ffffff;
+  --color-bg-default: #f7f7f7;
+  --color-bg-subtle: #eff1f3;
+  --color-bg-accent-subtle: #fff5fa;
+  --color-bg-error-subtle: #fff0f3;
+  --color-border-default: #d9dcdf;
+  --color-border-subtle: #eff1f3;
+  --color-border-medium: #66707a;
+  --color-border-focus: #ff2e98;
+  --color-border-error: #e30036;
+  --color-fill-primary: #ff2e98;
+  --color-fill-primary-hover: #e6007e;
+  --color-fill-secondary: #181a1b;
+  --color-fill-disabled: #d9dcdf;
+  --color-surface-default: #ffffff;
+
+  /* fonts */
+  --font-kr-regular: 'Noto Sans KR:Regular', sans-serif;
+  --font-kr-medium: 'Noto Sans KR:Medium', sans-serif;
+  --font-kr-bold: 'Noto Sans KR:Bold', sans-serif;
+
+  /* type scale */
+  --text-h2: 28px;
+  --text-h2--line-height: 40px;
+  --text-h3: 24px;
+  --text-h3--line-height: 32px;
+  --text-subtitle: 18px;
+  --text-subtitle--line-height: 26px;
+  --text-body: 16px;
+  --text-body--line-height: 24px;
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 21px;
+  --text-caption: 13px;
+  --text-caption--line-height: 18px;
+
+  /* spacing */
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  /* component sizes */
+  --spacing-icon: 24px;
+  --spacing-header: 56px;
+  --spacing-chip: 40px;
+  --spacing-cta: 52px;
+  --spacing-field: 58px;
+  --spacing-done: 64px;
+  --spacing-bullet: 6px;
+  --container-screen: 600px;
+
+  /* radius */
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-full: 9999px;
+}
+
+body {
+  font-family: var(--font-kr-regular);
+  color: var(--color-text-primary);
+  background: var(--color-bg-surface);
+}
+
+/* Input / checkbox stroke (Design.md: 1.5) */
+@utility border-b-input {
+  border-bottom-width: 1.5px;
+}
+@utility border-input {
+  border-width: 1.5px;
+}
